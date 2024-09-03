@@ -8,7 +8,7 @@
     
 "Bing-Aerial":
 {"type": "raster",
-"tiles": ["http://ecn.{s}.tiles.virtualearth.net/tiles/a{quadkey}.png?g=14658&n=z"],
+"tiles": ["http://ecn.{s}.tiles.virtualearth.net/tiles/a{q}.png?g=14658&n=z"],
 "tileSize": 256}
 },
 
