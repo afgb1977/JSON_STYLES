@@ -1,0 +1,25 @@
+{
+"version": 8,
+"name": "ESRI-Aerial",
+"sources": {
+"TerrainSource": {
+"url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=7dlhLl3hiXQ1gsth0kGu",
+"type": "raster-dem"},
+    
+"ESRI-Aerial": {
+"type": "raster",
+"tiles": ["https://fly.maptiles.arcgis.com/arcgis/rest/services/World_Imagery_Firefly/MapServer/tile/{z}/{y}/{x}"],
+"tileSize": 256}
+},
+
+"layers": [
+{
+"id": "ESRI-Aerial",
+"type": "raster",
+"source": "ESRI-Aerial",
+"minzoom": 1,
+"maxzoom": 19
+}
+],
+"terrain": {"source": "TerrainSource", "exaggeration": 1.33}
+}
