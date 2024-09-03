@@ -1,0 +1,25 @@
+{
+"version": 8,
+"name": "GMaps-Aerial",
+"sources": {
+"TerrainSource": {
+"url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=7dlhLl3hiXQ1gsth0kGu",
+"type": "raster-dem"},
+    
+"GMaps-Aerial": {
+"type": "raster",
+"tiles": ["https://mt.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"],
+"tileSize": 256}
+},
+
+"layers": [
+{
+"id": "GMaps-Aerial",
+"type": "raster",
+"source": "GMaps-Aerial",
+"minzoom": 1,
+"maxzoom": 20
+}
+],
+"terrain": {"source": "TerrainSource", "exaggeration": 1.33}
+}
