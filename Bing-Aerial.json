@@ -1,0 +1,28 @@
+{
+"version": 8,
+"name": "Bing-Aerial",
+"sources": {
+"TerrainSource": {
+"url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=7dlhLl3hiXQ1gsth0kGu",
+"type": "raster-dem"},
+    
+"Bing-Aerial":
+{"type": "raster",
+"tiles": ["http://ecn.t0.tiles.virtualearth.net/tiles/a{quadkey}.png?g=14658&n=z",
+"http://ecn.t1.tiles.virtualearth.net/tiles/a{quadkey}.png?g=14658&n=z",
+"http://ecn.t2.tiles.virtualearth.net/tiles/a{quadkey}.png?g=14658&n=z",
+"http://ecn.t3.tiles.virtualearth.net/tiles/a{quadkey}.png?g=14658&n=z"],
+"tileSize": 256}
+},
+
+"layers": [
+{
+"id": "Bing-Aerial",
+"type": "raster",
+"source": "Bing-Aerial",
+"minzoom": 1,
+"maxzoom": 20
+}
+],
+"terrain": {"source": "TerrainSource", "exaggeration": 1.33}
+}
