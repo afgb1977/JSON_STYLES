@@ -13,6 +13,7 @@
 "tiles": ["https://grid.plus.codes/grid/wms/{z}/{x}/{y}.png" ],
 "tileSize": 256}
 },
+  
 "layers": 
 [
 {"id": "OpenStreetMap",
