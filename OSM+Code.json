@@ -1,0 +1,30 @@
+{
+"version": 8,
+"name": "OpenStreetMap",
+"sources":
+{
+"OpenStreetMap":
+{"type": "raster",
+"tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png" ],
+"tileSize": 256},
+
+"+Code":
+{"type": "raster",
+"tiles": ["https://grid.plus.codes/grid/wms/{z}/{x}/{y}.png" ],
+"tileSize": 256}
+},
+"layers": 
+[
+{"id": "OpenStreetMap",
+"type": "raster",
+"source": "OpenStreetMap",
+"minzoom": 1,
+"maxzoom": 20},
+
+{"id": "+Code",
+"type": "raster",
+"source": "+Code",
+"minzoom": 1,
+"maxzoom": 20}
+]
+}
