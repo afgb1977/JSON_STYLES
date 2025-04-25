@@ -27,6 +27,6 @@
 "source": "+Code",
 "minzoom": 1,
 "maxzoom": 20,
-"paint": {"raster-opacity": 0.7}}
+"paint": {"raster-opacity": 0.55}}
 ]
 }
