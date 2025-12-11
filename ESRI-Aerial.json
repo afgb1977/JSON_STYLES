@@ -3,7 +3,7 @@
 "name": "ESRI-Aerial",
 "sources": {
 "TerrainSource": {
-"url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=7dlhLl3hiXQ1gsth0kGu",
+"url": "https://tiles.mapterhorn.com/tilejson.json",
 "type": "raster-dem"},
     
 "ESRI-Aerial": {
