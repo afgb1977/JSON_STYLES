@@ -1,0 +1,39 @@
+{
+"version": 8,
+"name": "ESRI+MGN25",
+"sources": {
+"DISASTER_RESPONSE_IMAGERY_RECENT": {
+"type": "raster",
+"tiles": [
+"https://di-disasterresponse.img.arcgis.com/arcgis/rest/services/drp_imagery/ImageServer/exportImage?f=image&bbox={bbox-epsg-3857}&bboxSR=3857&imageSR=3857&size=256,256&format=jpgpng&mosaicRule=%7B%22mosaicMethod%22%3A%22esriMosaicAttribute%22%2C%22orderField%22%3A%22AcquisitionDate%22%2C%22ascending%22%3Afalse%2C%22mosaicOperation%22%3A%22MT_FIRST%22%7D&renderingRule=%7B%22rasterFunction%22%3A%22Natural%20Color%20for%20Visualization%20-%20DRA%22%7D"
+],
+"tileSize": 256
+},
+"DANE_MGN_2025_ALL": {
+"type": "raster",
+"tiles": [
+"https://portalgis.dane.gov.co/mparcgis/services/MGN2025/Serv_CapasMGN_2025/MapServer/WMSServer?request=GetMap&service=WMS&version=1.3.0&layers=0,1,2,3,4,5,6,7,8,9&styles=&crs=EPSG:3857&bbox={bbox-epsg-3857}&width=256&height=256&format=image/png&transparent=true&dpi=150"
+],
+"tileSize": 256
+}
+},
+"layers": [
+{
+"id": "background-imagery-layer",
+"type": "raster",
+"source": "DISASTER_RESPONSE_IMAGERY_RECENT",
+"minzoom": 1,
+"maxzoom": 20
+},
+{
+"id": "dane-mgn-2025-layer",
+"type": "raster",
+"source": "DANE_MGN_2025_ALL",
+"minzoom": 1,
+"maxzoom": 20,
+"paint": {
+"raster-opacity": 1
+}
+}
+]
+}
